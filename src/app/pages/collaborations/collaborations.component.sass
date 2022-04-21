@@ -1,0 +1,76 @@
+@import '../../../custom-theme.scss'
+
+.page-container
+    display: flex
+    width: 100%
+    justify-content: space-between
+    .collaboration-section
+        flex-basis: 28%
+        background: white
+        box-shadow: $box-shadow
+        .collaboration-section-title
+            padding: .5rem 2rem
+            font-weight: 900
+            text-align: center
+            font-family: $font-family-h2
+            text-transform: uppercase
+            margin-bottom: 0
+        .collaboration-section-subtitle
+            padding: 0 1rem .5rem 1rem
+            text-align: center
+            font-weight: 400
+            font-family: $font-family-h2
+            text-transform: uppercase
+            min-height: 2.5rem
+        ul
+            list-style-type: none
+            padding: 0
+            margin: 0
+            li
+                border-top: solid .25px
+                a
+                    padding: .5rem 0
+                    display: flex
+                    align-items: center
+                    width: 100%
+                    text-decoration: none
+                    font-size: 1rem
+                    line-height: 1.6
+                    color: black
+                    .text
+                        flex-grow: 1
+                        padding-left: .5rem
+                    .icon
+                        font-size: .8rem
+                        margin: 0 .5rem
+                        text-align: center
+        &.cinema
+            .collaboration-section-title,
+            .collaboration-section-subtitle
+                color: $color-collaboration-cinema
+                background: rgba($color-collaboration-cinema, .1)
+            ul
+                li
+                    border-color: $color-collaboration-cinema
+                    &:hover
+                        background: rgba($color-collaboration-cinema, .2)
+        &.culture
+            .collaboration-section-title,
+            .collaboration-section-subtitle
+                color: $color-collaboration-culture
+                background: rgba($color-collaboration-culture, .1)
+            ul
+                li
+                    border-color: $color-collaboration-culture
+                    &:hover
+                        background: rgba($color-collaboration-culture, .2)
+        &.environment
+            .collaboration-section-title,
+            .collaboration-section-subtitle
+                color: $color-collaboration-environment
+                background: rgba($color-collaboration-environment, .1)
+            ul
+                li
+                    border-color: $color-collaboration-environment
+                    &:hover
+                        background: rgba($color-collaboration-environment, .2)

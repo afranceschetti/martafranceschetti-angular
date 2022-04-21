@@ -1,0 +1,16 @@
+@use "sass:map"
+@import '../../../../custom-theme.scss'
+
+.page-title
+    display: flex
+    width: 100%
+    margin-bottom: 3rem
+    font-size: 3em
+    .filler
+        flex-grow: 1
+        padding-bottom: 1rem
+    .filler-right
+        border-bottom: 2px solid map.get($martafranceschetti-primary-colors,900)
+    .main-title
+        padding-bottom: 1rem
+        border-bottom: 2px solid map.get($martafranceschetti-primary-colors,900)

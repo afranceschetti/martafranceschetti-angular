@@ -1,0 +1,28 @@
+<mat-toolbar class="main-header">
+    <mat-toolbar-row class="first-row">
+        <h1>STUDIO MARTA FRANCESCHETTI <small>UFFICIO STAMPA, COMUNICAZIONE & P.R.</small></h1>
+        <span class="menu-spacer"></span>
+        <div class="right-menu">
+            <a mat-button routerLinkActive="active" [routerLinkActiveOptions]="{ exact: true }" [routerLink]="'/'"><span
+                    [innerHtml]="'main_menu_home'|translate"></span></a>
+            <a mat-button routerLinkActive="active" [routerLinkActiveOptions]="{ exact: true }"
+                [routerLink]="'/aboutus'"><span [innerHtml]="'main_menu_aboutus'|translate"></span></a>
+            <a mat-button routerLinkActive="active" [routerLinkActiveOptions]="{ exact: true }"
+                [routerLink]="'/collaborations'"><span [innerHtml]="'main_menu_collaborations'|translate"></span></a>
+            <a mat-button routerLinkActive="active" [routerLinkActiveOptions]="{ exact: true }"
+                [routerLink]="'/domains'"><span [innerHtml]="'main_menu_domains'|translate"></span></a>
+            <a mat-button routerLinkActive="active" [routerLinkActiveOptions]="{ exact: true }"
+                [routerLink]="'/team'"><span [innerHtml]="'main_menu_team'|translate"></span></a>
+            <a mat-button routerLinkActive="active" [routerLinkActiveOptions]="{ exact: true }"
+                [routerLink]="'/contacts'" class="last-item"><span
+                    [innerHtml]="'main_menu_contacts'|translate"></span></a>
+        </div>
+    </mat-toolbar-row>
+
+    <!-- <mat-toolbar-row class="second-row">
+        <a mat-button>
+            <mat-icon>translate</mat-icon>
+        </a>
+    </mat-toolbar-row> -->
+
+</mat-toolbar>

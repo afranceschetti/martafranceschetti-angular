@@ -1,0 +1,20 @@
+[
+    {
+        "key": "martafranceschetti",
+        "name": "Marta Franceschetti",
+        "feature": "Press Office",
+        "email": "press@martafranceschetti.com"
+    },
+    {
+        "key": "claudiapostolo",
+        "name": "Claudi Apostolo",
+        "feature": "Environmental Projects & Editor",
+        "email": "claudiapostolo@martafranceschetti.com"
+    },
+    {
+        "key": "alessiabelli",
+        "name": "Alessia Belli",
+        "feature": "Social",
+        "email": "alessiabelli.press@gmail.com"
+    }
+]

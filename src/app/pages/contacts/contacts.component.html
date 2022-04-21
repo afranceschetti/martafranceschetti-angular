@@ -1,0 +1,15 @@
+<page-title mainTitle="contacts_main_title"></page-title>
+<div class="page-container">
+    <ng-container *ngIf="contacts">
+        <div *ngFor="let c of contacts" class="contact {{c.key}}">
+            <h2 class="contact-name">{{c.name}}</h2>
+            <div class="contact-feature">{{c.feature}}</div>
+            <a class="contact-email" href="mailto:{{c.email}}" target="_blank">
+                <mat-icon class="icon mute">alternate_email</mat-icon>
+                <div class="email">
+                    {{c.email}}
+                </div>
+            </a>
+        </div>
+    </ng-container>
+</div>

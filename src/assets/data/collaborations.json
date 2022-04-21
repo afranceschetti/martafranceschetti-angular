@@ -1,0 +1,89 @@
+[
+    {
+        "section": "cinema",
+        "values": [
+            {
+                "name": "Elba Film Festival",
+                "link": "https://www.elbafilmfestival.com"
+            },
+            {
+                "name": "Film Commission Vallée d’Aoste",
+                "link": "https://www.filmcommission.vda.it"
+            },
+            {
+                "name": "Gran Paradiso Film Festival",
+                "link": "https://www.gpff.it"
+            },
+            {
+                "name": "Panama Film",
+                "link": "https://www.panamafilm.it"
+            },
+            {
+                "name": "Obiettivo Cinema",
+                "link": "https://www.stellefilm.it"
+            },
+            {
+                "name": "Riviera International Film Festival",
+                "link": "https://www.rivierafilm.org"
+            },
+            {
+                "name": "View Conference",
+                "link": "https://www.viewconference.it"
+            }
+        ]
+    },
+    {
+        "section": "environment",
+        "values": [
+            {
+                "name": "Aspromiele - Associazione Produttori Miele Piemonte",
+                "link": "https://www.aspromiele.it"
+            },
+            {
+                "name": "Piazzo Vini - Green Experience",
+                "link": "https://www.piazzo.it"
+            },
+            {
+                "name": "Politecnico di Torino",
+                "link": "https://www.smaile.it"
+            },
+            {
+                "name": "Rigenera HBW - Human Brain Wave",
+                "link": "https://rigenerahbw.com/it"
+            },
+            {
+                "name": "Tavolo del Riuso - Festival Istruzioni per il Riuso ",
+                "link": "https://tavolodelriuso.it"
+            },
+            {
+                "name": "Università degli Studi di Torino",
+                "link": "https://www.smaile.it"
+            }
+        ]
+    },
+    {
+        "section": "culture",
+        "values": [
+            {
+                "name": "Centro Conservazione e Restauro La Venaria Reale",
+                "link": "https://www.centrorestaurovenaria.it"
+            },
+            {
+                "name": "Elena Pugliese - artista",
+                "link": "https://www.elenapugliese.it"
+            },
+            {
+                "name": "Festival del Viaggiatore ",
+                "link": "https://www.festivaldelviaggiatore.com"
+            },
+            {
+                "name": "Officine Caos",
+                "link": "https://www.officinecaos.net"
+            },
+            {
+                "name": "Tramanda - Fiber Art",
+                "link": "https://www.comune.chieri.to.it/cultura-turismo/tramanda-area-press"
+            }
+        ]
+    }
+]
