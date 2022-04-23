@@ -14,7 +14,7 @@ export class HomeComponent implements OnInit {
   constructor(private sanitizer: DomSanitizer, public translate: TranslateService) { }
 
   ngOnInit(): void {
-    fetch("/assets/content/home/home_" + this.translate.currentLang + ".html").then(res => res.text()).then(data => {
+    fetch("assets/content/home/home_" + this.translate.currentLang + ".html").then(res => res.text()).then(data => {
       this.homeContent = this.sanitizer.bypassSecurityTrustHtml(data);
     });
   }

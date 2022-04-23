@@ -7,6 +7,8 @@
 // have to load a single css file for Angular Material in your app.
 // Be sure that you only ever include this mixin once!
 @import '~@angular/material/theming';
+@import './_variables.scss';
+
 @include mat.core();
 @import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,300;0,400;1,400&family=Be+Vietnam+Pro:wght@200;400;900&family=Bungee+Inline&family=Fascinate&family=Goldman:wght@400;700&family=Saira+Stencil+One&display=swap');
 
@@ -15,70 +17,8 @@
 //$martafranceschetti-primary: mat.define-palette(mat.$indigo-palette);
 // $martafranceschetti-accent: mat.define-palette(mat.$pink-palette, A200, A100, A400);
 // $martafranceschetti-warn: mat.define-palette(mat.$red-palette);
-// lightgreen
-$martafranceschetti-primary-colors: (50: #f5fdec,
-  100: #e6fad0,
-  200: #d5f7b0,
-  300: #c4f390,
-  400: #b7f179,
-  500: #aaee61,
-  600: #a3ec59,
-  700: #99e94f,
-  800: #90e745,
-  900: #7fe233,
-  A100: #ffffff,
-  A200: #f9fff5,
-  A400: #dbffc2,
-  A700: #ccffa8,
-  contrast: (50: rgba(black, 0.87),
-    100: rgba(black, 0.87),
-    200: rgba(black, 0.87),
-    300: rgba(black, 0.87),
-    400: rgba(black, 0.87),
-    500: white,
-    600: white,
-    700: white,
-    800: white,
-    900: white,
-    A100: rgba(black, 0.87),
-    A200: white,
-    A400: white,
-    A700: white,
-  ));
 
 $martafranceschetti-primary: mat.define-palette($martafranceschetti-primary-colors);
-
-
-// purple
-$martafranceschetti-accent-colors: (50: #f4e9f5,
-  100: #e5c7e6,
-  200: #d3a2d5,
-  300: #c17dc4,
-  400: #b461b8,
-  500: #a745ab,
-  600: #9f3ea4,
-  700: #96369a,
-  800: #8c2e91,
-  900: #7c1f80,
-  A100: #fcbdff,
-  A200: #f98aff,
-  A400: #f657ff,
-  A700: #f53dff,
-  contrast: (50: rgba(black, 0.87),
-    100: rgba(black, 0.87),
-    200: rgba(black, 0.87),
-    300: rgba(black, 0.87),
-    400: rgba(black, 0.87),
-    500: white,
-    600: white,
-    700: white,
-    800: white,
-    900: white,
-    A100: rgba(black, 0.87),
-    A200: white,
-    A400: white,
-    A700: white,
-  ));
 
 $martafranceschetti-accent: mat.define-palette($martafranceschetti-accent-colors);
 
@@ -102,38 +42,6 @@ $custom-typography: mat-typography-config($font-family: Lato);
 // Alternatively, you can import and @include the theme mixins for each component
 // that you are using.
 @include mat.all-component-themes($martafranceschetti-theme);
-
-$primary: #aaee61;
-$secondary: #1b834b;
-
-$link-color: $secondary;
-
-$color-mute: #afb2b4;
-$color-mute-dark: #909294;
-$color-mute-light: #bbc0c3;
-
-$grey: #ccc;
-$font-family-logo:'Be Vietnam Pro',
-sans-serif;
-$font-family-h1:'Be Vietnam Pro',
-sans-serif;
-$font-family-h2:'Be Vietnam Pro',
-sans-serif;
-
-$color-collaboration-cinema: #1ba1e2;
-$color-collaboration-culture: #e51400;
-$color-collaboration-environment: #60a917;
-
-$box-shadow: 0px 3px 1px -2px rgba(0, 0, 0, 0.2),
-0px 2px 2px 0px rgba(0, 0, 0, 0.14),
-0px 1px 5px 0px rgba(0, 0, 0, 0.12);
-$box-shadow-hover: 0 3px 6px rgba(0, 0, 0, 0.16),
-0 3px 6px rgba(0, 0, 0, 0.23);
-$box-shadow-transition: all 0.3s cubic-bezier(.25, .8, .25, 1);
-
-$box-shadow-images: 0 3px 6px rgba(0, 0, 0, 0.16),
-0 3px 6px rgba(0, 0, 0, 0.23);
-
 
 html,
 body {

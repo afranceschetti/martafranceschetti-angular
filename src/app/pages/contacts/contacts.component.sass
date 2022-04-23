@@ -1,4 +1,5 @@
-@import '../../../custom-theme.scss'
+@use "sass:map"
+@import '../../../_variables.scss'
 
 .page-container
     display: flex
@@ -8,6 +9,27 @@
         flex-basis: 31%
         background: white
         box-shadow: $box-shadow
+        &.contact-martafranceschetti
+            .contact-name
+                color: rgba($color-contact,1)
+                background-color: rgba($color-contacts-martafranceschetti,.5)
+            .contact-feature
+                color: rgba($color-contact,1)
+                background-color: rgba($color-contacts-martafranceschetti,.5)
+        &.contact-claudiaapostolo
+            .contact-name
+                color: rgba($color-contact,1)
+                background-color: rgba($color-contacts-claudiaapostolo,.5)
+            .contact-feature
+                color: rgba($color-contact,1)
+                background-color: rgba($color-contacts-claudiaapostolo,.5)
+        &.contact-alessiabelli
+            .contact-name
+                color: rgba($color-contact,1)
+                background-color: rgba($color-contacts-alessiabelli,.5)
+            .contact-feature
+                color: rgba($color-contact,1)
+                background-color: rgba($color-contacts-alessiabelli,.5 )
         .contact-name
             padding: .5rem 2rem
             font-weight: 900
@@ -15,15 +37,12 @@
             font-family: $font-family-h2
             text-transform: uppercase
             margin-bottom: 0
-            background-color: rgba($grey,.5)
         .contact-feature
             padding: .5rem 2rem
             text-align: center
             font-weight: 400
             font-family: $font-family-h2
             text-transform: uppercase
-            background-color: rgba($grey,.5)
-            border-bottom: solid .5px $grey
         .contact-email
             text-align: center
             font-weight: 400
@@ -38,10 +57,11 @@
             .icon
                 padding: 2rem .25rem 2rem 1rem
                 text-align: center
+                color: $secondary
             .email
                 flex-grow: 1
                 padding: 2rem 1rem 2rem .25rem
                 text-align: left
                 font-size: 1.2rem
             &:hover
-                background: rgba($grey, .3)
+                background: rgba($secondary, .1)

@@ -1,5 +1,5 @@
 @use "sass:map"
-@import '../../../../custom-theme.scss'
+@import '../../../../_variables.scss'
 .main-header
     background: white
     padding-top: .5rem
@@ -18,11 +18,12 @@
             font-family: $font-family-logo
             font-weight: 900
             font-size: 1.4rem
+            color: map.get($martafranceschetti-primary-colors,900)
             small
                 display: block
                 font-size: .9rem
                 font-weight: 400
-                border-top: solid .5px #000
+                border-top: solid .5px map.get($martafranceschetti-primary-colors,900)
 
         .right-menu
             .mat-button

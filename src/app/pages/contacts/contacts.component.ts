@@ -13,7 +13,7 @@ export class ContactsComponent implements OnInit {
   constructor(private httpClient: HttpClient) { }
 
   ngOnInit(): void {
-    this.httpClient.get<Array<{ key: string, name: string, feature: string, email: string }>>("/assets/data/contacts.json").subscribe(data => {
+    this.httpClient.get<Array<{ key: string, name: string, feature: string, email: string }>>("assets/data/contacts.json").subscribe(data => {
       console.log(data);
       this.contacts = data;
     })
