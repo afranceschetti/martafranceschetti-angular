@@ -8,13 +8,26 @@ import { TranslateService } from '@ngx-translate/core';
   styleUrls: ['./app.component.sass']
 })
 
+
 export class AppComponent {
+
+  showSidebar = false;
   title = 'martafranceschetti';
+
+
   constructor(public translate: TranslateService, public router: Router) {
     this.router.routeReuseStrategy.shouldReuseRoute = () => false;
     translate.addLangs(['it', 'en']);
     translate.setDefaultLang('it');
     let currentLang = localStorage.getItem("currentLang") == "en" ? "en" : "it";
     translate.use(currentLang);
+  }
+
+  isHome(): boolean {
+    return this.router.url == "/";
+  }
+
+  toggleSidebar() {
+    this.showSidebar = !this.showSidebar;
   }
 }

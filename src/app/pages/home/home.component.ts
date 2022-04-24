@@ -1,22 +1,40 @@
 import { Component, OnInit } from '@angular/core';
-import { DomSanitizer, SafeHtml } from '@angular/platform-browser';
+import { DomSanitizer } from '@angular/platform-browser';
+import { faFacebook, faLinkedin } from '@fortawesome/free-brands-svg-icons';
 import { TranslateService } from '@ngx-translate/core';
 
 @Component({
   selector: 'app-home',
   templateUrl: './home.component.html',
-  styleUrls: ['./home.component.sass']
+  styleUrls: ['./home.component.sass'],
+  host: {
+    class: 'home-container'
+  }
 })
 export class HomeComponent implements OnInit {
 
-  homeContent: SafeHtml = "";
+  faFacebook = faFacebook
+  faLinkedin = faLinkedin
+
+  ready: boolean = false;
+  domains = [
+    "culture",
+    "cinema",
+    "art",
+    "dance",
+    "theatre",
+    "environment",
+    "innovation",
+    "technologies",
+    "food",
+    "health"];
 
   constructor(private sanitizer: DomSanitizer, public translate: TranslateService) { }
 
+  mobileSecondPage = false;
+
   ngOnInit(): void {
-    fetch("assets/content/home/home_" + this.translate.currentLang + ".html").then(res => res.text()).then(data => {
-      this.homeContent = this.sanitizer.bypassSecurityTrustHtml(data);
-    });
+    setTimeout(() => this.ready = true, 500)
   }
 
 }

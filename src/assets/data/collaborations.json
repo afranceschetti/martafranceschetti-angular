@@ -3,24 +3,24 @@
         "section": "cinema",
         "values": [
             {
-                "name": "Elba Film Festival",
-                "link": "https://www.elbafilmfestival.com"
-            },
-            {
                 "name": "Film Commission Vallée d’Aoste",
                 "link": "https://www.filmcommission.vda.it"
             },
             {
-                "name": "Gran Paradiso Film Festival",
-                "link": "https://www.gpff.it"
+                "name": "Elba Film Festival",
+                "link": "https://www.elbafilmfestival.com"
+            },
+            {
+                "name": "Obiettivo Cinema",
+                "link": "https://www.stellefilm.it"
             },
             {
                 "name": "Panama Film",
                 "link": "https://www.panamafilm.it"
             },
             {
-                "name": "Obiettivo Cinema",
-                "link": "https://www.stellefilm.it"
+                "name": "Gran Paradiso Film Festival",
+                "link": "https://www.gpff.it"
             },
             {
                 "name": "Riviera International Film Festival",
@@ -36,15 +36,44 @@
         "section": "environment",
         "values": [
             {
-                "name": "Aspromiele - Associazione Produttori Miele Piemonte",
-                "link": "https://www.aspromiele.it"
-            },
-            {
                 "name": "Piazzo Vini - Green Experience",
                 "link": "https://www.piazzo.it"
             },
             {
+                "name": "Festival Istruzioni per il Riuso - Tavolo del Riuso",
+                "link": "https://tavolodelriuso.it"
+            },
+            {
+                "name": "Aspromiele - Associazione Produttori Miele Piemonte",
+                "link": "https://www.aspromiele.it"
+            },
+            {
+                "name": "Consorzio Robiola di Roccaverano",
+                "link": "https://robioladiroccaverano.com/"
+            },
+            {
+                "name": "La Terra Ri-Media",
+                "link": "https://fert.org/news/contadini-e-documentaristi-la-terra-ri-media-laboratorio-costa-vescovato-al-sabato-25-febbraio"
+            },
+            {
+                "name": "CinemAmbiente",
+                "link": "https://cinemambiente.it/"
+            }
+        ]
+    },
+    {
+        "section": "innovation",
+        "values": [
+            {
                 "name": "Politecnico di Torino",
+                "link": "https://www.polito.it/"
+            },
+            {
+                "name": "Università degli Studi di Torino",
+                "link": "https://www.unito.it/"
+            },
+            {
+                "name": "Progetto SMAILE",
                 "link": "https://www.smaile.it"
             },
             {
@@ -52,12 +81,12 @@
                 "link": "https://rigenerahbw.com/it"
             },
             {
-                "name": "Tavolo del Riuso - Festival Istruzioni per il Riuso ",
-                "link": "https://tavolodelriuso.it"
+                "name": "Teoresi Group SPA",
+                "link": "https://www.teoresigroup.com/it/"
             },
             {
-                "name": "Università degli Studi di Torino",
-                "link": "https://www.smaile.it"
+                "name": "Istituto Zooprofilattico Piemonte Liguria Valle d’Aosta",
+                "link": "https://www.izsplv.it/it/"
             }
         ]
     },
@@ -65,24 +94,32 @@
         "section": "culture",
         "values": [
             {
-                "name": "Centro Conservazione e Restauro La Venaria Reale",
-                "link": "https://www.centrorestaurovenaria.it"
+                "name": "Officine Caos",
+                "link": "https://www.officinecaos.net"
+            },
+            {
+                "name": "Coorpi - La danza in 1 minuto",
+                "link": "https://coorpi.org/"
+            },
+            {
+                "name": "Festival Alt(r)i Ascolti",
+                "link": "https://www.insiemeachamois.it/altri-ascolti/"
+            },
+            {
+                "name": "Tramanda - Fiber Art",
+                "link": "https://www.comune.chieri.to.it/cultura-turismo/tramanda-area-press"
             },
             {
                 "name": "Elena Pugliese - artista",
                 "link": "https://www.elenapugliese.it"
             },
             {
+                "name": "Centro Conservazione e Restauro La Venaria Reale",
+                "link": "https://www.centrorestaurovenaria.it"
+            },
+            {
                 "name": "Festival del Viaggiatore ",
                 "link": "https://www.festivaldelviaggiatore.com"
-            },
-            {
-                "name": "Officine Caos",
-                "link": "https://www.officinecaos.net"
-            },
-            {
-                "name": "Tramanda - Fiber Art",
-                "link": "https://www.comune.chieri.to.it/cultura-turismo/tramanda-area-press"
             }
         ]
     }

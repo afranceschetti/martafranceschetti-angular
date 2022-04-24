@@ -1,0 +1,19 @@
+@import '../../../_variables.scss'
+
+.mission
+    display: flex
+    @media (max-width: 767.98px)
+        flex-direction: column
+    .mission-content
+        flex-grow: 1
+    .mission-image
+        min-width: 40%
+        padding-right: 4rem
+        @media (max-width: 767.98px)
+            padding: 0 1rem 2rem 1rem
+        img
+            width: 100%
+            height: auto
+            box-shadow: $box-shadow-images
+            margin-right: 1rem
+            transform: rotate(-3deg)

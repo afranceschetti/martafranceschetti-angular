@@ -1,3 +1,4 @@
+@use "sass:map"
 /* You can add global styles to this file, and also import other style files */
 @import './_variables.scss'
 body
@@ -38,15 +39,29 @@ h1.page-title
     font-size: 3rem
     margin-bottom: 2em
     //text-shadow: 2px 8px 6px rgba(0,0,0,0.2), 0px -5px 35px rgba(255,255,255,0.3), 2px 2px 2px rgba(0,0,0,0)
+h1
+    &.logo
+        font-family: $font-family-logo
+        font-weight: 900
+        font-size: 1.4rem
+        color: map.get($martafranceschetti-primary-colors,900)
+        small
+            display: block
+            font-size: .7em
+            font-weight: 400
+            border-top: solid .5px map.get($martafranceschetti-primary-colors,900)
 
-// home
-// .home-content
-//     clear: both
-//     .home-image
-//         img
-//             float: right
-//             width: 40%
-//             height: auto
-//             box-shadow: $box-shadow-images
-//             margin: 0 0 2rem 2rem
-//             transform: rotate(3deg)
+.home-container
+    display: flex
+    height: 100%
+    flex-direction: column
+    flex-grow: 1
+
+.only-desktop
+    @media (max-width: 767.98px)
+        display: none
+
+.only-mobile
+    display: none
+    @media (max-width: 767.98px)
+        display: inherit

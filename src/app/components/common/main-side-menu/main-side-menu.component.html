@@ -1,0 +1,15 @@
+<a mat-button routerLinkActive="active" [routerLinkActiveOptions]="{ exact: true }" [routerLink]="'/'"><span
+                [innerHtml]="'home_menu_home'|translate" (click)="closeMenu()"></span></a>
+<a mat-button routerLinkActive="active" [routerLinkActiveOptions]="{ exact: true }" [routerLink]="'/team'"><span
+                [innerHtml]="'home_menu_team'|translate" (click)="closeMenu()"></span></a>
+<a mat-button routerLinkActive="active" [routerLinkActiveOptions]="{ exact: true }" [routerLink]="'/mission'"><span
+                [innerHtml]="'home_menu_mission'|translate" (click)="closeMenu()"></span></a>
+<a mat-button routerLinkActive="active" [routerLinkActiveOptions]="{ exact: true }" [routerLink]="'/aboutus'"><span
+                [innerHtml]="'home_menu_aboutus'|translate" (click)="closeMenu()"></span></a>
+<!-- <a mat-button routerLinkActive="active" [routerLinkActiveOptions]="{ exact: true }"
+    [routerLink]="'/domains'"><span [innerHtml]="'home_menu_domains'|translate" (click)="closeMenu()"></span></a> -->
+<a mat-button routerLinkActive="active" [routerLinkActiveOptions]="{ exact: true }"
+        [routerLink]="'/collaborations'"><span [innerHtml]="'home_menu_collaborations'|translate"
+                (click)="closeMenu()"></span></a>
+<a mat-button routerLinkActive="active" [routerLinkActiveOptions]="{ exact: true }" [routerLink]="'/contacts'"
+        class="last-item"><span [innerHtml]="'home_menu_contacts'|translate" (click)="closeMenu()"></span></a>

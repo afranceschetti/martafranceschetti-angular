@@ -1,31 +1,25 @@
-<app-main-header></app-main-header>
-<div class="main-body" role='main' aria-label='Main Content'>
-  <div class="main-content">
-    <router-outlet></router-outlet>
-  </div>
-  <!--
-    <div >
-    <ul class="side-menu">
-      <li><a [routerLink]="'/'" class="item-home">
-          <span class="text" translate>main_menu_home</span>
-        </a></li>
-      <li><a [routerLink]="'/aboutus'" class="item-aboutus">
-          <span class="text" translate>main_menu_aboutus</span>
-        </a></li>
-      <li><a [routerLink]="'/collaborations'" class="item-collaborations">
-          <span class="text" translate>main_menu_collaborations</span>
-        </a></li>
-      <li><a [routerLink]="'/domains'" class="item-domains">
-          <span class="text" translate>main_menu_domains</span>
-        </a></li>
-      <li><a [routerLink]="'/team'" class="item-team">
-          <span class="text" translate>main_menu_team</span>
-        </a></li>
-      <li><a [routerLink]="'/contacts'" class="item-contacts">
-          <span class="text" translate>main_menu_contacts</span>
-        </a></li>
-    </ul>
-  </div>
--->
+<app-main-header *ngIf="!isHome()" class="only-desktop"></app-main-header>
+<div class="header-mobile" *ngIf="!isHome()">
+  <mat-toolbar-row class="first-row">
+    <button mat-icon-button (click)="drawer.toggle()" class="menu-icon">
+      <mat-icon>menu</mat-icon>
+    </button>
+    <span class="menu-spacer"></span>
+    <h1 class="logo">{{'logo_main'|translate}}<small translate>logo_sub</small></h1>
+  </mat-toolbar-row>
 </div>
-<app-main-footer></app-main-footer>
+<mat-drawer-container class="example-container">
+  <mat-drawer #drawer mode="side" closed>
+    <app-main-side-menu (onCloseMenu)="drawer.close()"></app-main-side-menu>
+  </mat-drawer>
+  <mat-drawer-content>
+    <div class="main-body" role='main' aria-label='Main Content' [ngClass]="{'inner-pages':!isHome()}">
+      <div class="main-content">
+        <router-outlet></router-outlet>
+      </div>
+    </div>
+  </mat-drawer-content>
+</mat-drawer-container>
+
+
+<app-main-footer *ngIf="!isHome()"></app-main-footer>

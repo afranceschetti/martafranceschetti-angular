@@ -64,6 +64,8 @@ $martafranceschetti-accent-colors: (50: #f4e9f5,
 
 $primary: #aaee61;
 $secondary: #1b834b;
+//$third: #006281;
+$third: #008c95;
 
 $link-color: $secondary;
 
@@ -82,11 +84,12 @@ sans-serif;
 $color-collaboration-cinema: #1ba1e2;
 $color-collaboration-culture: #e51400;
 $color-collaboration-environment: #60a917;
+$color-collaboration-innovation: #647687;
 
-$color-contact: #CCE61B;
-$color-contacts-martafranceschetti: #E2F946;
-$color-contacts-claudiaapostolo: #E7FA66;
-$color-contacts-alessiabelli: #EEFC8C;
+$color-contact: $third;
+$color-contacts-martafranceschetti: $color-contact;
+$color-contacts-claudiaapostolo: lighten($color-contact, 10%);
+$color-contacts-alessiabelli: lighten($color-contact, 20%);
 // $color-contacts-martafranceschetti: #44a672;
 // $color-contacts-claudiaapostolo: #53cb8b;
 // $color-contacts-alessiabelli: #72d4a0;

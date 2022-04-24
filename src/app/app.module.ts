@@ -6,6 +6,7 @@ import { MatButtonModule } from '@angular/material/button';
 import { MatDividerModule } from '@angular/material/divider';
 import { MatIconModule } from '@angular/material/icon';
 import { MatToolbarModule } from '@angular/material/toolbar';
+import { MatSidenavModule } from '@angular/material/sidenav';
 import { BrowserModule } from '@angular/platform-browser';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { RouterModule, Routes } from '@angular/router';
@@ -22,8 +23,9 @@ import { ContactsComponent } from './pages/contacts/contacts.component';
 import { AboutusComponent } from './pages/aboutus/aboutus.component';
 import { DomainsComponent } from './pages/domains/domains.component';
 import { TeamComponent } from './pages/team/team.component';
-
-
+import { MissionComponent } from './pages/mission/mission.component';
+import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
+import { MainSideMenuComponent } from './components/common/main-side-menu/main-side-menu.component';
 
 
 export const createTranslateLoader = (http: HttpClient) => {
@@ -34,6 +36,7 @@ registerLocaleData(localeIt, 'it');
 
 const appRoutes: Routes = [
   { path: '', component: HomeComponent },
+  { path: 'mission', component: MissionComponent },
   { path: 'aboutus', component: AboutusComponent },
   { path: 'collaborations', component: CollaborationsComponent },
   { path: 'domains', component: DomainsComponent },
@@ -54,7 +57,9 @@ const appRoutes: Routes = [
     ContactsComponent,
     AboutusComponent,
     DomainsComponent,
-    TeamComponent],
+    TeamComponent,
+    MissionComponent,
+    MainSideMenuComponent],
   imports: [
     BrowserModule,
     AppRoutingModule,
@@ -73,6 +78,8 @@ const appRoutes: Routes = [
     MatButtonModule,
     MatIconModule,
     MatToolbarModule,
+    MatSidenavModule,
+    FontAwesomeModule,
   ],
   providers: [
     { provide: LocationStrategy, useClass: HashLocationStrategy },

@@ -1,4 +1,25 @@
 <page-title mainTitle="team_main_title"></page-title>
 <div class="page-container">
-    Work in progress
+    <ng-container *ngIf="contacts">
+        <div *ngFor="let c of contacts" class="contact contact-{{c.key}}">
+            <div class="contact-image">
+                <img src="assets/images/team/{{c.key}}_sq.jpg" />
+            </div>
+            <h2 class="contact-name">{{c.name}}</h2>
+            <div class="contact-feature">
+                <div class="feature">{{c.feature}}</div>
+                <div class="links">
+                    <a href="mailto:{{c.email}}" target="_blank">
+                        <fa-icon [icon]="faAt"></fa-icon>
+                    </a>
+                    <a *ngIf="c.linkedin" href="{{c.linkedin}}" target="_blank">
+                        <fa-icon [icon]="faLinkedin"></fa-icon>
+                    </a>
+                </div>
+
+
+            </div>
+            <div [innerHtml]="c.biography" class="contact-biography"></div>
+        </div>
+    </ng-container>
 </div>

@@ -1,10 +1,48 @@
 <!-- <page-title mainTitle="home_main_title"></page-title> -->
 <div class="home">
-    <div class="home-image">
-        <img src="assets/images/home/marta_claudia.jpg">
-    </div>
-    <div class="home-content">
-        <div [innerHTML]="homeContent" class="home-content"></div>
-    </div>
+    <div class="left-panel" [ngClass]="{'mobile-second-page':mobileSecondPage}">
+        <button class="show-menu-button" [ngClass]="{'ready':ready}" (click)="mobileSecondPage=true"
+            translate>home_enter_button</button>
+        <div class="filler  only-desktop">&nbsp;</div>
+        <div class="domains" [ngClass]="{'ready':ready}">
+            <div *ngFor="let d of domains" class="domain {{d}}">{{"domain_" + d|translate}}</div>
 
+        </div>
+        <div class="filler only-mobile">&nbsp;</div>
+        <div class="logo-container">
+            <h1 class="logo">{{'logo_main'|translate}}<small translate>logo_sub</small></h1>
+        </div>
+    </div>
+    <!-- <div class="right-panel-border">
+        &nbsp;
+    </div> -->
+    <div class="right-panel" [ngClass]="{'ready':ready, 'mobile-second-page':mobileSecondPage}">
+        <div class="filler">&nbsp;</div>
+        <a mat-button class="home_menu home_menu_1" routerLinkActive="active"
+            [routerLinkActiveOptions]="{ exact: true }" [routerLink]="'/team'"><span
+                [innerHtml]="'home_menu_team'|translate"></span></a>
+        <a mat-button class="home_menu home_menu_2" routerLinkActive="active"
+            [routerLinkActiveOptions]="{ exact: true }" [routerLink]="'/mission'"><span
+                [innerHtml]="'home_menu_mission'|translate"></span></a>
+        <a mat-button class="home_menu home_menu_3" routerLinkActive="active"
+            [routerLinkActiveOptions]="{ exact: true }" [routerLink]="'/aboutus'"><span
+                [innerHtml]="'home_menu_aboutus'|translate"></span></a>
+        <a mat-button class="home_menu home_menu_4" routerLinkActive="active"
+            [routerLinkActiveOptions]="{ exact: true }" [routerLink]="'/collaborations'"><span
+                [innerHtml]="'home_menu_collaborations'|translate"></span></a>
+        <a mat-button class="home_menu home_menu_5" routerLinkActive="active"
+            [routerLinkActiveOptions]="{ exact: true }" [routerLink]="'/contacts'"><span
+                [innerHtml]="'home_menu_contacts'|translate"></span></a>
+        <!-- <div class="filler">&nbsp;</div> -->
+    </div>
+    <div class="social-icons" [ngClass]="{'ready':ready}">
+        <a target='_blank' href="https://www.facebook.com/ufficiostampamartafranceschetti" title="Facebook"
+            class="facebook">
+            <fa-icon [icon]="faFacebook"></fa-icon>
+        </a>
+        <a target='_blank' href="https://www.linkedin.com/in/marta-franceschetti-89316a1b/" title="Linkedin"
+            class="linkedin">
+            <fa-icon [icon]="faLinkedin"></fa-icon>
+        </a>
+    </div>
 </div>

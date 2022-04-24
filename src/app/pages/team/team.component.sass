@@ -1,0 +1,43 @@
+@use "sass:map"
+@import '../../../_variables.scss'
+
+.page-container
+    display: flex
+    width: 100%
+    justify-content: space-between
+    @media (max-width: 767.98px)
+        flex-direction: column
+    .contact
+        flex-basis: 31%
+        background: white
+        box-shadow: $box-shadow
+        @media (max-width: 767.98px)
+            margin-bottom: 2rem
+        .contact-image
+            img
+                width: 100%
+                height: auto
+        h2
+            text-align: center
+            padding: .5rem
+            font-weight: bold
+        .contact-feature
+            display: flex
+            width: 100%
+            border: solid map.get($martafranceschetti-primary-colors,900)
+            border-width: 1px 0
+            background: rgba(map.get($martafranceschetti-primary-colors,900), .2)
+            .feature
+                flex-grow: 1
+                padding: .5rem 1rem
+                font-size: 1rem
+            .links
+                font-size: 1.4rem
+                padding: .5rem 1rem
+                text-align: right
+                a
+                    margin-left: 1rem
+
+        .contact-biography
+            padding: 1rem
+            text-align: justify

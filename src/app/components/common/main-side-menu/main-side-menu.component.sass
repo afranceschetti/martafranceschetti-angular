@@ -1,0 +1,11 @@
+@use "sass:map"
+@import '../../../../_variables.scss'
+a
+    display: block
+    text-transform: uppercase
+    border-top: 2px solid map.get($martafranceschetti-primary-colors,900)
+    border-radius: 0
+    font-size: 1.2rem
+    padding: 1rem
+    &:hover,&.active
+        background-color: map.get($martafranceschetti-primary-colors,100)
