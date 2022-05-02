@@ -1,4 +1,5 @@
 import { Component, EventEmitter, OnInit, Output } from '@angular/core';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-main-side-menu',
@@ -9,12 +10,13 @@ export class MainSideMenuComponent implements OnInit {
 
   @Output() onCloseMenu: EventEmitter<boolean> = new EventEmitter<boolean>()
 
-  constructor() { }
+  constructor(private router: Router) { }
 
   ngOnInit(): void {
   }
 
-  closeMenu() {
+  goTo(path: string) {
     this.onCloseMenu.emit(true);
+    this.router.navigate([path]);
   }
 }

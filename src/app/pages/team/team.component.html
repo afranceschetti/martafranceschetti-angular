@@ -1,9 +1,15 @@
-<page-title mainTitle="team_main_title"></page-title>
+<!-- <page-title mainTitle="team_main_title"></page-title> -->
+<div class="container">
+</div>
 <div class="page-container">
+    <div class="intro">
+        <p [innerHtml]="'team_intro'|translate" class="first"></p>
+        <p [innerHtml]="'team_outro'|translate"></p>
+    </div>
     <ng-container *ngIf="contacts">
         <div *ngFor="let c of contacts" class="contact contact-{{c.key}}">
             <div class="contact-image">
-                <img src="assets/images/team/{{c.key}}_sq.jpg" />
+                <img src="assets/images/team/{{c.key}}_full.jpg" />
             </div>
             <h2 class="contact-name">{{c.name}}</h2>
             <div class="contact-feature">
@@ -19,7 +25,18 @@
 
 
             </div>
-            <div [innerHtml]="c.biography" class="contact-biography"></div>
+            <div class="content">
+                <div class="contact-biography">
+                    <div [innerHtml]="c.biographyShort"></div>
+                    <button mat-button class="btn-show-all" (click)="c.showAll = true" *ngIf="!c.showAll"><span
+                            translate>show_all</span></button>
+                    <div [innerHtml]="c.biographyFull" *ngIf="c.showAll"></div>
+                    <button mat-button class="btn-show-all" (click)="c.showAll = false" *ngIf="c.showAll">
+                        <span translate>show_less</span></button>
+                </div>
+            </div>
         </div>
     </ng-container>
+</div>
+<div class="container">
 </div>

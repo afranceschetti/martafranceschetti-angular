@@ -5,7 +5,9 @@
             translate>home_enter_button</button>
         <div class="filler  only-desktop">&nbsp;</div>
         <div class="domains" [ngClass]="{'ready':ready}">
-            <div *ngFor="let d of domains" class="domain {{d}}">{{"domain_" + d|translate}}</div>
+            <div *ngFor="let d of domains" class="domain {{d}}">
+                <span [innerHtml]="'domain_' + d|translate"></span>
+            </div>
 
         </div>
         <div class="filler only-mobile">&nbsp;</div>
@@ -22,11 +24,11 @@
             [routerLinkActiveOptions]="{ exact: true }" [routerLink]="'/team'"><span
                 [innerHtml]="'home_menu_team'|translate"></span></a>
         <a mat-button class="home_menu home_menu_2" routerLinkActive="active"
-            [routerLinkActiveOptions]="{ exact: true }" [routerLink]="'/mission'"><span
-                [innerHtml]="'home_menu_mission'|translate"></span></a>
-        <a mat-button class="home_menu home_menu_3" routerLinkActive="active"
             [routerLinkActiveOptions]="{ exact: true }" [routerLink]="'/aboutus'"><span
                 [innerHtml]="'home_menu_aboutus'|translate"></span></a>
+        <a mat-button class="home_menu home_menu_3" routerLinkActive="active"
+            [routerLinkActiveOptions]="{ exact: true }" [routerLink]="'/mission'"><span
+                [innerHtml]="'home_menu_mission'|translate"></span></a>
         <a mat-button class="home_menu home_menu_4" routerLinkActive="active"
             [routerLinkActiveOptions]="{ exact: true }" [routerLink]="'/collaborations'"><span
                 [innerHtml]="'home_menu_collaborations'|translate"></span></a>

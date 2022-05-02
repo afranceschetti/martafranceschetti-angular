@@ -9,13 +9,18 @@ import { TranslateService } from '@ngx-translate/core';
 })
 export class AboutusComponent implements OnInit {
 
-  aboutusContent: SafeHtml = "";
+  aboutusContentShort: SafeHtml = "";
+  aboutusContentFull: SafeHtml = "";
+  showAll: boolean = false;
 
   constructor(private sanitizer: DomSanitizer, public translate: TranslateService) { }
 
   ngOnInit(): void {
-    fetch("assets/content/aboutus/aboutus_" + this.translate.currentLang + ".html").then(res => res.text()).then(data => {
-      this.aboutusContent = this.sanitizer.bypassSecurityTrustHtml(data);
+    fetch("assets/content/aboutus/aboutus_short_" + this.translate.currentLang + ".html?t=" + new Date().getTime()).then(res => res.text()).then(data => {
+      this.aboutusContentShort = this.sanitizer.bypassSecurityTrustHtml(data);
+    });
+    fetch("assets/content/aboutus/aboutus_full_" + this.translate.currentLang + ".html?t=" + new Date().getTime()).then(res => res.text()).then(data => {
+      this.aboutusContentFull = this.sanitizer.bypassSecurityTrustHtml(data);
     });
   }
 

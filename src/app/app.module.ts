@@ -29,7 +29,7 @@ import { MainSideMenuComponent } from './components/common/main-side-menu/main-s
 
 
 export const createTranslateLoader = (http: HttpClient) => {
-  return new TranslateHttpLoader(http, './assets/i18n/', '.json');
+  return new TranslateHttpLoader(http, './assets/i18n/', '.json?t=' + new Date().getTime());
 }
 
 registerLocaleData(localeIt, 'it');

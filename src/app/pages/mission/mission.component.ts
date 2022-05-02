@@ -9,13 +9,18 @@ import { TranslateService } from '@ngx-translate/core';
 export class MissionComponent implements OnInit {
 
 
-  missionContent: SafeHtml = "";
+  missionContentShort: SafeHtml = "";
+  missionContentFull: SafeHtml = "";
+  showAll: boolean = false;
 
   constructor(private sanitizer: DomSanitizer, public translate: TranslateService) { }
 
   ngOnInit(): void {
-    fetch("assets/content/mission/mission_" + this.translate.currentLang + ".html").then(res => res.text()).then(data => {
-      this.missionContent = this.sanitizer.bypassSecurityTrustHtml(data);
+    fetch("assets/content/mission/mission_short_" + this.translate.currentLang + ".html?t=" + new Date().getTime()).then(res => res.text()).then(data => {
+      this.missionContentShort = this.sanitizer.bypassSecurityTrustHtml(data);
+    });
+    fetch("assets/content/mission/mission_full_" + this.translate.currentLang + ".html?t=" + new Date().getTime()).then(res => res.text()).then(data => {
+      this.missionContentFull = this.sanitizer.bypassSecurityTrustHtml(data);
     });
   }
 }

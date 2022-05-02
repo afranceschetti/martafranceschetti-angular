@@ -1,7 +1,7 @@
 @use "sass:map"
 @import '../../../_variables.scss'
 
-$home-menu-min-width: 17rem
+$home-menu-min-width: 13rem
 $home-menu-delta: 2rem
 
 $domain-height: 1.5em
@@ -53,33 +53,33 @@ $domain-height: 1.5em
             &.ready
                 .cinema
                     bottom: calc($domain-height*10)
-                .culture
+                .events
                     bottom: calc($domain-height*9)
                     transition-delay: .4s
                 .art
                     bottom: calc($domain-height*8)
-                    transition-delay: .6s
+                    transition-delay: .8s
                 .dance
                     bottom: calc($domain-height*7)
-                    transition-delay: .8s
+                    transition-delay: 1.2s
                 .theatre
                     bottom: calc($domain-height*6)
-                    transition-delay: 1s
+                    transition-delay: 1.6s
                 .environment
                     bottom: calc($domain-height*5)
-                    transition-delay: 1.2s
+                    transition-delay: 2s
                 .innovation
                     bottom: calc($domain-height*4)
-                    transition-delay: 1.4s
+                    transition-delay: 2.4s
                 .technologies
                     bottom: calc($domain-height*3)
-                    transition-delay: 1.6s
+                    transition-delay: 2.8s
                 .food
                     bottom: calc($domain-height*2)
-                    transition-delay: 1.6s
+                    transition-delay: 3.2s
                 .health
                     bottom: calc($domain-height*1)
-                    transition-delay: 1.8s
+                    transition-delay: 3.6s
         .logo-container
             position: absolute
             top: 3rem
@@ -88,7 +88,7 @@ $domain-height: 1.5em
             @media (max-width: 767.98px)
                 position: static
                 width: 95%
-                padding: 1rem 0rem 4rem 0rem
+                padding: 1rem 0rem 1rem 0rem
                 transform: translateX(5%)
             .logo
                 font-size: 2.5rem
@@ -125,19 +125,19 @@ $domain-height: 1.5em
                 transform: translateX(0)
             .home_menu_1
                 min-width: calc($home-menu-min-width + 0*$home-menu-delta)
-                transition-delay: 2s
+                transition-delay: 4s
             .home_menu_2
                 min-width: calc($home-menu-min-width + 1*$home-menu-delta)
-                transition-delay: 2.2s
+                transition-delay: 4.2s
             .home_menu_3
                 min-width: calc($home-menu-min-width + 2*$home-menu-delta)
-                transition-delay: 2.4s
+                transition-delay: 4.4s
             .home_menu_4
                 min-width: calc($home-menu-min-width + 3*$home-menu-delta)
-                transition-delay: 2.6s
+                transition-delay: 4.6s
             .home_menu_5
                 min-width: calc($home-menu-min-width + 4*$home-menu-delta)
-                transition-delay: 2.8s
+                transition-delay: 4.8s
         .mat-button
             position: relative
             display: block
@@ -196,7 +196,7 @@ $domain-height: 1.5em
         transition-duration: .5s
         &.ready
             visibility: visible
-            transition-delay: 2s
+            transition-delay: 4s
 
 .social-icons
     position: absolute
@@ -212,13 +212,22 @@ $domain-height: 1.5em
         a
             font-size: 2rem
             &.facebook
-                transition-delay: 3.5s
+                transition-delay: 5.5s
                 @media (max-width: 767.98px)
-                    transition-delay: 2.5s
+                    transition-delay: 4.5s
             &.linkedin
-                transition-delay: 3s
+                transition-delay: 5s
                 @media (max-width: 767.98px)
-                    transition-delay: 2s
+                    transition-delay: 4s
+::ng-deep
+    .color_cinema
+        color: $color-collaboration-cinema
+    .color_culture
+        color: $color-collaboration-culture
+    .color_environment
+        color: $color-collaboration-environment
+    .color_innovation
+        color: $color-collaboration-innovation
 
 @keyframes pulse
     50%

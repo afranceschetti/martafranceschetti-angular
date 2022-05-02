@@ -15,17 +15,21 @@ export class TeamComponent implements OnInit {
   faAt = faAt;
   faLinkedin = faLinkedin;
 
-  contacts: Array<{ key: string, name: string, feature: string, email: string, linkedin?: string, biography?: SafeHtml }> = [];
+  contacts: Array<{ key: string, name: string, feature: string, email: string, linkedin?: string, biographyShort?: SafeHtml, biographyFull?: SafeHtml, showAll?: boolean }> = [];
 
   constructor(private httpClient: HttpClient, private sanitizer: DomSanitizer, public translate: TranslateService) { }
 
   ngOnInit(): void {
-    this.httpClient.get<Array<{ key: string, name: string, feature: string, email: string }>>("assets/data/contacts.json").subscribe(data => {
+    this.httpClient.get<Array<{ key: string, name: string, feature: string, email: string }>>("assets/data/contacts.json?t=" + new Date().getTime()).subscribe(data => {
       console.log(data);
       this.contacts = data;
       this.contacts.forEach(c => {
-        fetch("assets/content/team/" + c.key + "_" + this.translate.currentLang + ".html").then(res => res.text()).then(data => {
-          c.biography = this.sanitizer.bypassSecurityTrustHtml(data);
+        c.showAll = false;
+        fetch("assets/content/team/" + c.key + "_short_" + this.translate.currentLang + ".html?t=" + new Date().getTime()).then(res => res.text()).then(data => {
+          c.biographyShort = this.sanitizer.bypassSecurityTrustHtml(data);
+        });
+        fetch("assets/content/team/" + c.key + "_full_" + this.translate.currentLang + ".html?t=" + new Date().getTime()).then(res => res.text()).then(data => {
+          c.biographyFull = this.sanitizer.bypassSecurityTrustHtml(data);
         });
 
       });

@@ -8,6 +8,7 @@ import { Component, Input, OnInit } from '@angular/core';
 export class PageTitleComponent implements OnInit {
 
   @Input() mainTitle: string = "";
+  @Input() subtitle: any = null;
   constructor() { }
 
   ngOnInit(): void {

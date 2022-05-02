@@ -18,8 +18,8 @@ export class HomeComponent implements OnInit {
 
   ready: boolean = false;
   domains = [
-    "culture",
     "cinema",
+    "events",
     "art",
     "dance",
     "theatre",

@@ -1,5 +1,9 @@
 <h1 class="page-title">
     <div class="filler filler-left">&nbsp;</div>
-    <div class="main-title">{{mainTitle|translate}}</div>
-    <div class="filler filler-right">&nbsp;</div>
+    <div class="main-title">
+        {{mainTitle|translate}}
+        <div class="subtitle">{{subtitle|translate}}</div>
+    </div>
+    <div class="filler filler-right" *ngIf="!subtitle">&nbsp;</div>
+    <div class="filler filler-right" *ngIf="subtitle"><small></small></div>
 </h1>
