@@ -1,0 +1,19 @@
+@import '../../../_variables.scss'
+.aboutus
+    display: flex
+    @media (max-width: 767.98px)
+        flex-direction: column-reverse
+    .aboutus-content
+        flex-grow: 1
+    .aboutus-image
+        padding-left: 2rem
+        @media (max-width: 767.98px)
+            padding: 0 1rem 2rem 1rem
+        img
+            width: 33vw
+            height: auto
+            box-shadow: $box-shadow-images
+            margin-right: 1rem
+            @media (max-width: 767.98px)
+                width: 100%
+                margin-right: 0

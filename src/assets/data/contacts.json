@@ -1,15 +1,16 @@
 [
     {
+        "key": "claudiaapostolo",
+        "name": "Claudia Apostolo",
+        "feature": "Giornalista Professionista",
+        "email": "claudiapostolo@martafranceschetti.com",
+        "linkedin": "https://www.linkedin.com/in/claudia-apostolo-87314086/"
+    },
+    {
         "key": "martafranceschetti",
         "name": "Marta Franceschetti",
         "feature": "Addetta Stampa & PR",
         "email": "press@martafranceschetti.com",
         "linkedin": "https://it.linkedin.com/in/marta-franceschetti-89316a1b"
-    },
-    {
-        "key": "claudiaapostolo",
-        "name": "Claudia Apostolo",
-        "feature": "Giornalista Professionista",
-        "email": "claudiapostolo@martafranceschetti.com"
     }
 ]

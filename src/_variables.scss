@@ -62,7 +62,8 @@ $martafranceschetti-accent-colors: (50: #f4e9f5,
     ));
 
 
-$primary: #aaee61;
+//$primary: #aaee61;
+$primary: #60a917;
 $secondary: #1b834b;
 //$third: #006281;
 $third: #008c95;
@@ -82,9 +83,11 @@ $font-family-h2:'Be Vietnam Pro',
 sans-serif;
 
 $color-collaboration-cinema: #1ba1e2;
-$color-collaboration-culture: #e51400;
-$color-collaboration-environment: #60a917;
-$color-collaboration-innovation: #d8c100;
+$color-collaboration-culture: #f04090;
+//$color-collaboration-culture: #e51400;
+$color-collaboration-environment: #4f8b13;
+//$color-collaboration-innovation: #d8c100;
+$color-collaboration-innovation: #fa6800;
 
 $color-contact: $third;
 $color-contacts-martafranceschetti: lighten($color-contact, 10%);

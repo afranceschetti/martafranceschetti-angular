@@ -37,6 +37,39 @@
         ]
     },
     {
+        "section": "culture",
+        "values": [
+            {
+                "name": "Officine Caos",
+                "link": "https://www.officinecaos.net"
+            },
+            {
+                "name": "Coorpi - La danza in 1 minuto",
+                "link": "https://coorpi.org/"
+            },
+            {
+                "name": "Festival Alt(r)i Ascolti",
+                "link": "https://www.insiemeachamois.it/altri-ascolti/"
+            },
+            {
+                "name": "Tramanda - Fiber Art",
+                "link": "https://www.comune.chieri.to.it/cultura-turismo/tramanda-area-press"
+            },
+            {
+                "name": "Elena Pugliese - artista",
+                "link": "https://www.elenapugliese.it"
+            },
+            {
+                "name": "Centro Conservazione e Restauro La Venaria Reale",
+                "link": "https://www.centrorestaurovenaria.it"
+            },
+            {
+                "name": "Festival del Viaggiatore ",
+                "link": "https://www.festivaldelviaggiatore.com"
+            }
+        ]
+    },
+    {
         "section": "environment",
         "values": [
             {
@@ -91,39 +124,6 @@
             {
                 "name": "Istituto Zooprofilattico Piemonte Liguria Valle d’Aosta",
                 "link": "https://www.izsplv.it/it/"
-            }
-        ]
-    },
-    {
-        "section": "culture",
-        "values": [
-            {
-                "name": "Officine Caos",
-                "link": "https://www.officinecaos.net"
-            },
-            {
-                "name": "Coorpi - La danza in 1 minuto",
-                "link": "https://coorpi.org/"
-            },
-            {
-                "name": "Festival Alt(r)i Ascolti",
-                "link": "https://www.insiemeachamois.it/altri-ascolti/"
-            },
-            {
-                "name": "Tramanda - Fiber Art",
-                "link": "https://www.comune.chieri.to.it/cultura-turismo/tramanda-area-press"
-            },
-            {
-                "name": "Elena Pugliese - artista",
-                "link": "https://www.elenapugliese.it"
-            },
-            {
-                "name": "Centro Conservazione e Restauro La Venaria Reale",
-                "link": "https://www.centrorestaurovenaria.it"
-            },
-            {
-                "name": "Festival del Viaggiatore ",
-                "link": "https://www.festivaldelviaggiatore.com"
             }
         ]
     }

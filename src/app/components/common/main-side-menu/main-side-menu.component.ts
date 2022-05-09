@@ -17,6 +17,6 @@ export class MainSideMenuComponent implements OnInit {
 
   goTo(path: string) {
     this.onCloseMenu.emit(true);
-    this.router.navigate([path]);
+    this.router.navigate([path], { queryParams: { mobileSecondPage: 'true' } });
   }
 }

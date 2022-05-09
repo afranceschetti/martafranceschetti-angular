@@ -2,36 +2,42 @@
 @import '../../../_variables.scss'
 
 .page-container
-    display: flex
     width: 100%
-    justify-content: space-between
     @media (max-width: 767.98px)
         flex-direction: column
     .contact-image
-        padding-right: 4rem
-        flex-basis: 50%
+        text-align: center
+        z-index: 1
         @media (max-width: 767.98px)
             padding: 0 0 2rem 0
         img
-            width: 100%
+            width: 40%
             height: auto
             box-shadow: $box-shadow-images
             margin-right: 1rem
+            @media (max-width: 767.98px)
+                width: 100%
     .contacts
+        display: flex
+        width: 100%
         flex-grow: 1
-        padding-left: 4rem
+        justify-content: space-between
         text-align: center
+        margin-top: -6rem
+        z-index: 100
         @media (max-width: 767.98px)
             padding-left: 0
-
+            flex-direction: column
+            margin-top: 0
     .contact
         background: white
         box-shadow: $box-shadow
         color: white
         background: $secondary
-        flex-basis: 50%
+        flex-basis: 30%
         margin-bottom: 2rem
         padding: 1rem 2rem 2rem 2rem
+        white-space: nowrap
         //flex-basis: 31%
         @media (max-width: 767.98px)
             flex-basis: 100%
@@ -54,10 +60,15 @@
             a
                 color: white
                 text-decoration: none
-
-            @media (max-width: 767.98px)
-                word-break: break-word
+            .text
+                @media (max-width: 767.98px)
+                    word-break: break-word
+                    white-space: break-spaces
             .icon
                 padding-right: 1rem
+                @media (max-width: 767.98px)
+                    display: block
             &:hover
                 background: rgba($third, .1)
+.thanks
+    margin-top: 2rem

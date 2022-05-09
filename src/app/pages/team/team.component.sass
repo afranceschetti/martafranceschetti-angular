@@ -5,6 +5,8 @@
     display: flex
     width: 100%
     justify-content: space-around
+    .filler
+        flex-grow: 1
     .intro
         flex-basis: 30%
         text-align: justify
@@ -15,9 +17,11 @@
     @media (max-width: 767.98px)
         flex-direction: column
     .contact
-        flex-basis: 25%
+        flex-basis: 30%
         background: white
         box-shadow: $box-shadow
+        display: flex
+        flex-direction: column
         @media (max-width: 767.98px)
             margin-bottom: 2rem
         .contact-image
@@ -41,6 +45,7 @@
             border: solid map.get($martafranceschetti-primary-colors,900)
             border-width: 1px 0
             background: rgba(map.get($martafranceschetti-primary-colors,900), .2)
+            margin-bottom: 1rem
             .feature
                 flex-grow: 1
                 padding: .5rem 1rem
@@ -53,5 +58,7 @@
                     margin-left: 1rem
 
         .contact-biography
-            padding: 1rem
+            padding: 0 1rem
             text-align: justify
+        .contact-button
+            padding: 0 1rem

@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { DomSanitizer } from '@angular/platform-browser';
+import { ActivatedRoute } from '@angular/router';
 import { faFacebook, faLinkedin } from '@fortawesome/free-brands-svg-icons';
 import { TranslateService } from '@ngx-translate/core';
 
@@ -20,20 +21,22 @@ export class HomeComponent implements OnInit {
   domains = [
     "cinema",
     "events",
-    "art",
-    "dance",
-    "theatre",
+    //    "art",
+    //    "dance",
+    //    "theatre",
     "environment",
     "innovation",
-    "technologies",
-    "food",
-    "health"];
+    //    "technologies",
+    //    "food",
+    //    "health"
+  ];
 
-  constructor(private sanitizer: DomSanitizer, public translate: TranslateService) { }
+  constructor(private route: ActivatedRoute, public translate: TranslateService) { }
 
   mobileSecondPage = false;
 
   ngOnInit(): void {
+    this.mobileSecondPage = this.route.snapshot.queryParamMap.get('mobileSecondPage') == "true";
     setTimeout(() => this.ready = true, 500)
   }
 

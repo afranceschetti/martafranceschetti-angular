@@ -1,7 +1,12 @@
-<page-title mainTitle="aboutus_main_title" subtitle="aboutus_main_subtitle"></page-title>
-<div class="content aboutus-content">
-    <div [innerHTML]="aboutusContentShort" class="aboutus-content"></div>
-    <!-- <button mat-button class="btn-show-all" (click)="showAll = true" *ngIf="!showAll"><span
-            translate>show_all</span></button>
-    <div [innerHTML]="aboutusContentFull" *ngIf="showAll"></div> -->
+<!-- <page-title mainTitle="aboutus_main_title" subtitle="aboutus_main_subtitle"></page-title> -->
+<div class="aboutus">
+    <div class="content aboutus-content">
+        <div [innerHTML]="aboutusContentShort" class="aboutus-content"></div>
+        <button mat-button class="btn-show-all" (click)="showAll = true" *ngIf="!showAll"><span
+                translate>show_all</span></button>
+        <div [innerHTML]="aboutusContentFull" *ngIf="showAll"></div>
+    </div>
+    <div class="aboutus-image">
+        <img src="assets/images/aboutus/typography.jpg">
+    </div>
 </div>

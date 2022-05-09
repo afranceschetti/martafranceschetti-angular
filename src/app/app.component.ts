@@ -24,7 +24,7 @@ export class AppComponent {
   }
 
   isHome(): boolean {
-    return this.router.url == "/";
+    return this.router.url == "/" || this.router.url.startsWith("/?") || this.router.url.startsWith("/#/?");
   }
 
   toggleSidebar() {

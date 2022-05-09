@@ -25,15 +25,18 @@
 
 
             </div>
-            <div class="content">
-                <div class="contact-biography">
-                    <div [innerHtml]="c.biographyShort"></div>
-                    <button mat-button class="btn-show-all" (click)="c.showAll = true" *ngIf="!c.showAll"><span
-                            translate>show_all</span></button>
-                    <div [innerHtml]="c.biographyFull" *ngIf="c.showAll"></div>
-                    <button mat-button class="btn-show-all" (click)="c.showAll = false" *ngIf="c.showAll">
-                        <span translate>show_less</span></button>
-                </div>
+
+            <div [innerHtml]="c.biographyShort" class="contact-biography"></div>
+            <div class="filler" *ngIf="!c.showAll"></div>
+            <div class="contact-button">
+                <button mat-button class="btn-show-all" (click)="c.showAll = true" *ngIf="!c.showAll"><span
+                        translate>show_all</span></button>
+            </div>
+            <div [innerHtml]="c.biographyFull" *ngIf="c.showAll" class="contact-biography"></div>
+            <div class="filler" *ngIf="c.showAll"></div>
+            <div class="contact-button">
+                <button mat-button class="btn-show-all" (click)="c.showAll = false" *ngIf="c.showAll">
+                    <span translate>show_less</span></button>
             </div>
         </div>
     </ng-container>

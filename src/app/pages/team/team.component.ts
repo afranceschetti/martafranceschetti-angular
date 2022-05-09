@@ -22,7 +22,7 @@ export class TeamComponent implements OnInit {
   ngOnInit(): void {
     this.httpClient.get<Array<{ key: string, name: string, feature: string, email: string }>>("assets/data/contacts.json?t=" + new Date().getTime()).subscribe(data => {
       console.log(data);
-      this.contacts = data;
+      this.contacts = data.reverse();
       this.contacts.forEach(c => {
         c.showAll = false;
         fetch("assets/content/team/" + c.key + "_short_" + this.translate.currentLang + ".html?t=" + new Date().getTime()).then(res => res.text()).then(data => {
