@@ -2,7 +2,7 @@
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 13.0.4.
 
-Here the webapp [live](http://www.martafranceschetti.com/#/contacts)
+Here the webapp [live](http://www.martafranceschetti.com/#/contacts){:target="_blank"}
 
 ## Development server
 
