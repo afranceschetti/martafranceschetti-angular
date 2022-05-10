@@ -4,7 +4,7 @@
   "scripts": {
     "ng": "ng",
     "start": "ng serve --port 4208",
-    "build": "ng build --base-href /2022/",
+    "build": "ng build --base-href /",
     "watch": "ng build --watch --configuration development",
     "test": "ng test"
   },
