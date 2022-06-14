@@ -26,6 +26,7 @@ import { TeamComponent } from './pages/team/team.component';
 import { MissionComponent } from './pages/mission/mission.component';
 import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
 import { MainSideMenuComponent } from './components/common/main-side-menu/main-side-menu.component';
+import { CookieComponent } from './components/common/cookie/cookie.component';
 
 
 export const createTranslateLoader = (http: HttpClient) => {
@@ -59,7 +60,8 @@ const appRoutes: Routes = [
     DomainsComponent,
     TeamComponent,
     MissionComponent,
-    MainSideMenuComponent],
+    MainSideMenuComponent,
+    CookieComponent],
   imports: [
     BrowserModule,
     AppRoutingModule,
