@@ -1,5 +1,7 @@
 import { Component, OnInit } from '@angular/core';
+import { MatDialog } from '@angular/material/dialog';
 import { faFacebook, faLinkedin } from '@fortawesome/free-brands-svg-icons';
+import { CookieModalComponent } from '../cookie-modal/cookie-modal.component';
 
 @Component({
   selector: 'app-main-footer',
@@ -13,9 +15,15 @@ export class MainFooterComponent implements OnInit {
 
   year = new Date().getFullYear();
 
-  constructor() { }
+  constructor(public dialog: MatDialog) { }
 
   ngOnInit(): void {
+  }
+
+  cookieModal() {
+    this.dialog.open(CookieModalComponent, {
+      width: '400px'
+    });
   }
 
 }

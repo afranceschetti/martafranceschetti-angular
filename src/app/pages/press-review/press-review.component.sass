@@ -1,0 +1,102 @@
+@import '../../../_variables.scss'
+
+h2
+    text-align: center
+    font-size: 2rem
+    color: $secondary
+    font-weight: bold
+    margin-bottom: 1em
+.mat-icon
+    height: auto
+.badge-pdf
+    margin-left: 1.5em
+.page-container
+    display: flex
+    width: 100%
+    justify-content: space-between
+    flex-wrap: wrap
+    @media (max-width: 767.98px)
+        flex-direction: column
+    .pressreview-section
+        flex-basis: 49%
+        background: white
+        box-shadow: $box-shadow
+        margin-bottom: 2rem
+        @media (max-width: 767.98px)
+            margin-bottom: 2rem
+        .pressreview-section-title
+            padding: .5rem 2rem
+            font-weight: 900
+            text-align: center
+            font-family: $font-family-h2
+            text-transform: uppercase
+            margin-bottom: 0
+        .pressreview-section-subtitle
+            padding: 0 1rem .5rem 1rem
+            text-align: center
+            font-weight: 400
+            font-family: $font-family-h2
+            text-transform: uppercase
+            min-height: 2.5rem
+        ul
+            list-style-type: none
+            padding: 0
+            margin: 0
+            li
+                border-top: solid .25px
+                a
+                    padding: .5rem 0
+                    display: flex
+                    align-items: center
+                    width: 100%
+                    text-decoration: none
+                    font-size: 1rem
+                    line-height: 1.6
+                    color: black
+                    .text
+                        flex-grow: 1
+                        padding-left: .5rem
+                    .icon
+                        font-size: .8rem
+                        margin: 0 .5rem
+                        text-align: center
+        &.cinema
+            .pressreview-section-title,
+            .pressreview-section-subtitle
+                color: $color-pressreview-cinema
+                background: rgba($color-pressreview-cinema, .1)
+            ul
+                li
+                    border-color: $color-pressreview-cinema
+                    &:hover
+                        background: rgba($color-pressreview-cinema, .2)
+        &.culture
+            .pressreview-section-title,
+            .pressreview-section-subtitle
+                color: $color-pressreview-culture
+                background: rgba($color-pressreview-culture, .1)
+            ul
+                li
+                    border-color: $color-pressreview-culture
+                    &:hover
+                        background: rgba($color-pressreview-culture, .2)
+        &.innovation
+            .pressreview-section-title,
+            .pressreview-section-subtitle
+                color: $color-pressreview-innovation
+                background: rgba($color-pressreview-innovation, .1)
+            ul
+                li
+                    border-color: $color-pressreview-innovation
+                    &:hover
+                        background: rgba($color-pressreview-innovation, .2)
+        &.environment
+            .pressreview-section-title,
+            .pressreview-section-subtitle
+                color: $color-pressreview-environment
+                background: rgba($color-pressreview-environment, .1)
+            ul
+                li
+                    border-color: $color-pressreview-environment
+                    &:hover
+                        background: rgba($color-pressreview-environment, .2)

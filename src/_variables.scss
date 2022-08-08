@@ -1,6 +1,7 @@
 // lightgreen
 
-$martafranceschetti-primary-colors: (50: #f5fdec,
+$martafranceschetti-primary-colors: (
+    50: #f5fdec,
     100: #e6fad0,
     200: #d5f7b0,
     300: #c4f390,
@@ -28,10 +29,12 @@ $martafranceschetti-primary-colors: (50: #f5fdec,
         A200: white,
         A400: white,
         A700: white,
-    ));
+    )
+);
 
 // purple
-$martafranceschetti-accent-colors: (50: #f4e9f5,
+$martafranceschetti-accent-colors: (
+    50: #f4e9f5,
     100: #e5c7e6,
     200: #d3a2d5,
     300: #c17dc4,
@@ -59,7 +62,8 @@ $martafranceschetti-accent-colors: (50: #f4e9f5,
         A200: white,
         A400: white,
         A700: white,
-    ));
+    )
+);
 
 
 //$primary: #aaee61;
@@ -75,19 +79,22 @@ $color-mute-dark: #909294;
 $color-mute-light: #bbc0c3;
 
 $grey: #ccc;
-$font-family-logo:'Be Vietnam Pro',
-sans-serif;
-$font-family-h1:'Be Vietnam Pro',
-sans-serif;
-$font-family-h2:'Be Vietnam Pro',
-sans-serif;
+$font-family-logo: 'Be Vietnam Pro',
+    sans-serif;
+$font-family-h1: 'Be Vietnam Pro',
+    sans-serif;
+$font-family-h2: 'Be Vietnam Pro',
+    sans-serif;
 
 $color-collaboration-cinema: #1ba1e2;
 $color-collaboration-culture: #f04090;
-//$color-collaboration-culture: #e51400;
 $color-collaboration-environment: #4f8b13;
-//$color-collaboration-innovation: #d8c100;
 $color-collaboration-innovation: #fa6800;
+
+$color-pressreview-cinema: #1ba1e2;
+$color-pressreview-culture: #f04090;
+$color-pressreview-environment: #4f8b13;
+$color-pressreview-innovation: #fa6800;
 
 $color-contact: $third;
 $color-contacts-martafranceschetti: lighten($color-contact, 10%);
@@ -98,11 +105,11 @@ $color-contacts-alessiabelli: lighten($color-contact, 30%);
 // $color-contacts-alessiabelli: #72d4a0;
 
 $box-shadow: 0px 3px 1px -2px rgba(0, 0, 0, 0.2),
-0px 2px 2px 0px rgba(0, 0, 0, 0.14),
-0px 1px 5px 0px rgba(0, 0, 0, 0.12);
+    0px 2px 2px 0px rgba(0, 0, 0, 0.14),
+    0px 1px 5px 0px rgba(0, 0, 0, 0.12);
 $box-shadow-hover: 0 3px 6px rgba(0, 0, 0, 0.16),
-0 3px 6px rgba(0, 0, 0, 0.23);
+    0 3px 6px rgba(0, 0, 0, 0.23);
 $box-shadow-transition: all 0.3s cubic-bezier(.25, .8, .25, 1);
 
 $box-shadow-images: 0 3px 6px rgba(0, 0, 0, 0.16),
-0 3px 6px rgba(0, 0, 0, 0.23);
+    0 3px 6px rgba(0, 0, 0, 0.23);

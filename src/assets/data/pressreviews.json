@@ -1,0 +1,57 @@
+[
+    {
+        "section": "cinema",
+        "values": [
+            {
+                "name": "Film Documentario",
+                "year": "2022",
+                "link": "assets/press-review/Ufficio_Stampa_Film_Documentario_2022.pdf"
+            },
+            {
+                "name": "Film Documentario",
+                "year": "2019-2021",
+                "link": "assets/press-review/Ufficio_Stampa_Film_Documentario_2019_2021.pdf"
+            },
+            {
+                "name": "Riviera International Film Festival",
+                "year": "2021",
+                "link": "assets/press-review/Ufficio_Stampa_Riviera_International_Film_Festival_2021.pdf"
+            }
+        ]
+    },
+    {
+        "section": "culture",
+        "values": [
+            {
+                "name": "Festival del viaggiatore",
+                "year": "2021",
+                "link": "https://www.festivaldelviaggiatore.com/wp-content/uploads/2022/02/Rassegna-Stampa-2021-FdV.pdf"
+            },
+            {
+                "name": "Ufficio Stampa Fiber Art",
+                "year": "2021",
+                "link": "assets/press-review/Ufficio_Stampa_Fiber_Art_2021.pdf"
+            }
+        ]
+    },
+    {
+        "section": "environment",
+        "values": [
+            {
+                "name": "Festival Istruzioni per il Riuso",
+                "year": "2021",
+                "link": "assets/press-review/Ufficio_Stampa_Festival_Istruzioni_per_il_Riuso_2021.pdf"
+            }
+        ]
+    },
+    {
+        "section": "innovation",
+        "values": [
+            {
+                "name": "Teoresi",
+                "year": "2021",
+                "link": "assets/press-review/Ufficio_Stampa_Teoresi_2021.pdf"
+            }
+        ]
+    }
+]

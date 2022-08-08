@@ -1,0 +1,20 @@
+<h2><strong translate>pressreviews_main_title</strong></h2>
+
+<div class="page-container">
+    <ng-container *ngIf="pressreviews">
+        <div *ngFor="let s of pressreviews" class="pressreview-section {{s.section}}">
+            <h2 class="pressreview-section-title" translate>pressreview_{{s.section}}</h2>
+            <div class="pressreview-section-subtitle" translate>pressreview_subtitle_{{s.section}}</div>
+            <ul>
+                <li *ngFor="let c of s.values">
+                    <a href="{{c.link}}" target="_blank">
+                        <span class="text">{{c.name}} </span>
+                        <small class="mute">{{c.year}}</small>
+                        <span class="badge-pdf">PDF</span>
+                        <mat-icon class="icon mute">open_in_new</mat-icon>
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </ng-container>
+</div>

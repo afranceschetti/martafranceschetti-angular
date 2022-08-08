@@ -20,6 +20,10 @@
     </mat-toolbar-row>
 
     <mat-toolbar-row class="second-row">
-        &copy; Copyright {{year}}: <a href="#">martafranceschetti.com</a>
+        <span>
+            &copy; Copyright {{year}}: <a href="#">martafranceschetti.com</a>
+        </span>
+        <span class="menu-spacer"></span>
+        <span class="btn-cookie" role="button" (click)="cookieModal()" translate>cookie_title</span>
     </mat-toolbar-row>
 </mat-toolbar>

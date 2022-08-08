@@ -4,6 +4,7 @@ import localeIt from '@angular/common/locales/it';
 import { LOCALE_ID, NgModule } from '@angular/core';
 import { MatButtonModule } from '@angular/material/button';
 import { MatDividerModule } from '@angular/material/divider';
+import { MatDialogModule } from '@angular/material/dialog';
 import { MatIconModule } from '@angular/material/icon';
 import { MatToolbarModule } from '@angular/material/toolbar';
 import { MatSidenavModule } from '@angular/material/sidenav';
@@ -27,6 +28,8 @@ import { MissionComponent } from './pages/mission/mission.component';
 import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
 import { MainSideMenuComponent } from './components/common/main-side-menu/main-side-menu.component';
 import { CookieComponent } from './components/common/cookie/cookie.component';
+import { CookieModalComponent } from './components/common/cookie-modal/cookie-modal.component';
+import { PressReviewComponent } from './pages/press-review/press-review.component';
 
 
 export const createTranslateLoader = (http: HttpClient) => {
@@ -40,6 +43,7 @@ const appRoutes: Routes = [
   { path: 'mission', component: MissionComponent },
   { path: 'aboutus', component: AboutusComponent },
   { path: 'collaborations', component: CollaborationsComponent },
+  { path: 'pressreviews', component: PressReviewComponent },
   { path: 'domains', component: DomainsComponent },
   { path: 'team', component: TeamComponent },
   { path: 'contacts', component: ContactsComponent },
@@ -61,7 +65,9 @@ const appRoutes: Routes = [
     TeamComponent,
     MissionComponent,
     MainSideMenuComponent,
-    CookieComponent],
+    CookieComponent,
+    CookieModalComponent,
+    PressReviewComponent],
   imports: [
     BrowserModule,
     AppRoutingModule,
@@ -81,6 +87,7 @@ const appRoutes: Routes = [
     MatIconModule,
     MatToolbarModule,
     MatSidenavModule,
+    MatDialogModule,
     FontAwesomeModule,
   ],
   providers: [

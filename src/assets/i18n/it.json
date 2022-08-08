@@ -1,4 +1,5 @@
 {
+    "close": "Chiudi",
     "logo_main": "MARTA FRANCESCHETTI",
     "logo_sub": "COMUNICAZIONE, UFFICIO STAMPA & PR",
     "show_all": "Continua a leggere...",
@@ -30,6 +31,15 @@
     "collaboration_subtitle_culture": "ARTE, DANZA, TEATRO E PERFORMING ARTS",
     "collaboration_subtitle_environment": "TRANSIZIONE ECOLOGICA E SOCIALE",
     "collaboration_subtitle_innovation": "SALUTE, TRANSIZIONE DIGITALE, INTELLIGENZA ARTIFICIALE",
+    "pressreviews_main_title": "Alcuni esempi di rassegne stampa",
+    "pressreview_cinema": "Cinema",
+    "pressreview_culture": "Cultura",
+    "pressreview_environment": "Ambiente",
+    "pressreview_innovation": "Innovazione",
+    "pressreview_subtitle_cinema": "FESTIVAL, FILM COMMISSION, AUTORI, SOCIETÀ DI PRODUZIONE",
+    "pressreview_subtitle_culture": "ARTE, DANZA, TEATRO E PERFORMING ARTS",
+    "pressreview_subtitle_environment": "TRANSIZIONE ECOLOGICA E SOCIALE",
+    "pressreview_subtitle_innovation": "SALUTE, TRANSIZIONE DIGITALE, INTELLIGENZA ARTIFICIALE",
     "domains_main_title": "Gli ambitidi lavoro",
     "domain_culture": "cultura",
     "domain_cinema": "<span class='color_cinema'>cinema</span>",
@@ -47,5 +57,7 @@
     "team_outro": "Dal 2022 <i>Marta Franceschetti Comunicazione - Ufficio Stampa & PR</i> si avvale della collaborazione della giornalista    <strong>Alessia Belli</strong> (Social Media Manager e Digital PR) per ottimizzare gli <strong>aspetti digitali e social della comunicazione</strong>.",
     "contacts_thanks": "Ringraziamo per la collaborazione: Gian Carlo Franceschetti, Luciana Galliano e Mia Santanera",
     "cookie_message": "Questo sito utilizza i COOKIE per migliorare servizi ed esperienza dei lettori. Se decidi di continuare la navigazione consideriamo come accettato il loro utilizzo.",
-    "cookie_accept": "Ok"
+    "cookie_accept": "Ok",
+    "cookie_title": "Politica Cookie",
+    "cookie_no_cookies": "Questo sito non usa cookies e non memorizza in alcun modo le tue informazioni"
 }
