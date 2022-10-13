@@ -2,7 +2,7 @@
 @import '../../../_variables.scss'
 
 $home-menu-min-width: 13rem
-$home-menu-delta: 2rem
+$home-menu-delta: 3rem
 
 $domain-height: 3em
 
@@ -107,7 +107,7 @@ $domain-height: 3em
             display: none
             &.mobile-second-page
                 display: flex
-                padding: 0 1rem
+                padding: 0 1rem 2rem 1rem
         .home_menu
             transform: translateX(100%)
             transition: all .2s cubic-bezier(0.175, 0.885, 0.32, 1.275)
@@ -132,6 +132,9 @@ $domain-height: 3em
             .home_menu_5
                 min-width: calc($home-menu-min-width + 4*$home-menu-delta)
                 transition-delay: 2.6s
+            .home_menu_6
+                min-width: calc($home-menu-min-width + 5*$home-menu-delta)
+                transition-delay: 2.8s
         .mat-button
             position: relative
             display: block
@@ -166,7 +169,8 @@ $domain-height: 3em
                     border-color: transparent map.get($martafranceschetti-primary-colors,400) map.get($martafranceschetti-primary-colors,400) transparent
                     //order-color: map.get($martafranceschetti-primary-colors,900)
             @media (max-width: 767.98px)
-                margin: 0 0 1rem 0
+                margin: 0 0 .8rem 0
+                font-size: 1.1rem
                 padding: .75rem 1rem
                 border-radius: 4rem
                 border-width: 2px 2px 2px 2px

@@ -10,5 +10,7 @@
     (click)="goTo('/domains')"><span [innerHtml]="'home_menu_domains'|translate" ></span></a> -->
 <a mat-button routerLinkActive="active" [routerLinkActiveOptions]="{ exact: true }"
         (click)="goTo('/collaborations')"><span [innerHtml]="'home_menu_collaborations'|translate"></span></a>
+<a mat-button routerLinkActive="active" [routerLinkActiveOptions]="{ exact: true }"
+        (click)="goTo('/pressreviews')"><span [innerHtml]="'home_menu_pressreviews'|translate"></span></a>
 <a mat-button routerLinkActive="active" [routerLinkActiveOptions]="{ exact: true }" (click)="goTo('/contacts')"
         class="last-item"><span [innerHtml]="'home_menu_contacts'|translate"></span></a>
