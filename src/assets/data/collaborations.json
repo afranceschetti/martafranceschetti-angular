@@ -11,6 +11,10 @@
                 "link": "https://www.elbafilmfestival.com"
             },
             {
+                "name": "Corto & Fieno, Festival del Cinema Rurale",
+                "link": "https://cortoefieno.it/"
+            },
+            {
                 "name": "Obiettivo Cinema",
                 "link": "https://www.stellefilm.it"
             },
@@ -39,6 +43,14 @@
     {
         "section": "culture",
         "values": [
+            {
+                "name": "Raccolti, Festival delle Narrazioni",
+                "link": "https://raccoltifestival.it/"
+            },
+            {
+                "name": "Associazione Choros: Bio-Grafia / Teatro di Comunità",
+                "link": "https://www.choroscomunita.com/"
+            },
             {
                 "name": "Officine Caos",
                 "link": "https://www.officinecaos.net"
