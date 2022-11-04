@@ -26,7 +26,10 @@
                 "name": "Filmine",
                 "link": "http://filmine.it/"
             },
-            {
+			{
+                "name": "Redibis Film",
+                "link": "https://www.redibisfilm.it/"
+            },            {
                 "name": "Gran Paradiso Film Festival",
                 "link": "https://www.gpff.it"
             },
