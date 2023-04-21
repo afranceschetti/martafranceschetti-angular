@@ -4,20 +4,19 @@
 .page-container
     display: flex
     width: 100%
-    justify-content: space-around
+    justify-content: space-between
+    flex-wrap: wrap
     .filler
         flex-grow: 1
     .intro
-        flex-basis: 30%
+        flex-basis: 22%
         text-align: justify
         font-size: 1rem
         line-height: 1.6
-        .first
-            margin-bottom: 4rem
     @media (max-width: 767.98px)
         flex-direction: column
     .contact
-        flex-basis: 30%
+        flex-basis: 25%
         background: white
         box-shadow: $box-shadow
         display: flex
@@ -25,9 +24,14 @@
         @media (max-width: 767.98px)
             margin-bottom: 2rem
         .contact-image
+            overflow: hidden
+            height: 500px
             img
                 width: 100%
                 height: auto
+                &:hover
+                    transition: all .25s ease-in
+                    transform: scale(1.05)
         h2
             text-align: center
             padding: .5rem
@@ -49,7 +53,8 @@
             .feature
                 flex-grow: 1
                 padding: .5rem 1rem
-                font-size: 1rem
+                font-size: .9rem
+                font-weight: bold
             .links
                 font-size: 1.4rem
                 padding: .5rem 1rem

@@ -2,15 +2,25 @@
     {
         "key": "claudiaapostolo",
         "name": "Claudia Apostolo",
-        "feature": "Giornalista Professionista",
+        "feature": "Giornalista - Redazione testi",
         "email": "claudiapostolo@martafranceschetti.com",
-        "linkedin": "https://www.linkedin.com/in/claudia-apostolo-87314086/"
+        "linkedin": "https://www.linkedin.com/in/claudia-apostolo-87314086/",
+        "contact_order": 3
     },
     {
         "key": "martafranceschetti",
         "name": "Marta Franceschetti",
         "feature": "Addetta Stampa & PR",
         "email": "press@martafranceschetti.com",
-        "linkedin": "https://it.linkedin.com/in/marta-franceschetti-89316a1b"
+        "linkedin": "https://it.linkedin.com/in/marta-franceschetti-89316a1b",
+        "contact_order": 1
+    },
+    {
+        "key": "alessiabelli",
+        "name": "Alessia Belli",
+        "feature": "Giornalista - Social Media Manager  ",
+        "email": "ufficiostampa@martafranceschetti.com",
+        "linkedin": "https://www.linkedin.com/in/alessiabelli/",
+        "contact_order": 2
     }
 ]

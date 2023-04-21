@@ -4,7 +4,7 @@
 <div class="page-container">
     <div class="intro">
         <p [innerHtml]="'team_intro'|translate" class="first"></p>
-        <p [innerHtml]="'team_outro'|translate"></p>
+        <!-- <p [innerHtml]="'team_outro'|translate"></p> -->
     </div>
     <ng-container *ngIf="contacts">
         <div *ngFor="let c of contacts" class="contact contact-{{c.key}}">
@@ -40,6 +40,4 @@
             </div>
         </div>
     </ng-container>
-</div>
-<div class="container">
 </div>
