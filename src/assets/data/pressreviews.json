@@ -3,6 +3,16 @@
         "section": "cinema",
         "values": [
             {
+                "name": "Film Commission Valle d'Aosta",
+                "year": "2022",
+                "link": "assets/press-review/Rassegna_Stampa_Film_Commission_Valle_Aosta_2022.pdf"
+            },
+            {
+                "name": "Film documentario “Lagunaria”",
+                "year": "2023",
+                "link": "assets/press-review/Rassegna_Stampa_Lagunaria_al_Festival_CinemAmbiente_2023.pdf"
+            },
+            {
                 "name": "Film Documentario “A Riveder le Stelle”",
                 "year": "2022",
                 "link": "assets/press-review/Ufficio_Stampa_Film_Documentario_2022.pdf"
@@ -22,6 +32,11 @@
     {
         "section": "culture",
         "values": [
+            {
+                "name": "Teatro Marchesa Torino - Associazione Choros",
+                "year": "2023",
+                "link": "assets/press-review/Rassegna_Teatro_Marchesa_Torino_estate_2023.pdf"
+            },
             {
                 "name": "Festival del viaggiatore",
                 "year": "2021",
@@ -47,6 +62,11 @@
     {
         "section": "innovation",
         "values": [
+            {
+                "name": "Progetto Università degli Studi e Politecnico di Torino - Progetto Smaile",
+                "year": "2021-2023",
+                "link": "assets/press-review/Rassegna_Stampa_Smaile_2021_2023.pdf"
+            },
             {
                 "name": "Teoresi",
                 "year": "2021",
