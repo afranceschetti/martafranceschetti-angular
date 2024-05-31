@@ -1,8 +1,5 @@
 <!-- <page-title mainTitle="contacts_main_title"></page-title> -->
 <div class="page-container">
-    <div class="contact-image">
-        <img src="assets/images/contacts/marta_claudia.jpg">
-    </div>
     <div class="contacts">
         <ng-container *ngIf="contacts">
             <div *ngFor="let c of contacts" class="contact contact-{{c.key}}">
@@ -15,6 +12,9 @@
                 </div>
             </div>
         </ng-container>
+    </div>
+    <div class="contact-image">
+        <img src="assets/images/contacts/contacts.jpg">
     </div>
     <div class="thanks">
         <p translate>contacts_thanks</p>

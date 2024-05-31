@@ -5,7 +5,8 @@
         "feature": "Giornalista - Redazione testi",
         "email": "claudiapostolo@martafranceschetti.com",
         "linkedin": "https://www.linkedin.com/in/claudia-apostolo-87314086/",
-        "contact_order": 2
+        "contact_order": 2,
+        "hidden": true
     },
     {
         "key": "martafranceschetti",

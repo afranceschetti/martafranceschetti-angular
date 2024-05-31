@@ -20,10 +20,10 @@ export class TeamComponent implements OnInit {
   constructor(private httpClient: HttpClient, private sanitizer: DomSanitizer, public translate: TranslateService) { }
 
   ngOnInit(): void {
-    this.httpClient.get<Array<{ key: string, name: string, feature: string, email: string, contact_order: number }>>("assets/data/contacts.json?t=" + new Date().getTime()).subscribe(data => {
+    this.httpClient.get<Array<{ key: string, name: string, feature: string, email: string, contact_order: number, hidden: boolean }>>("assets/data/contacts.json?t=" + new Date().getTime()).subscribe(data => {
       console.log(data);
       // this.contacts = data.reverse();
-      this.contacts = data.sort((a, b) => a.contact_order > b.contact_order ? 1 : -1)
+      this.contacts = data.sort((a, b) => a.contact_order > b.contact_order ? 1 : -1).filter((c) => !c.hidden)
       this.contacts.forEach(c => {
         c.showAll = false;
         fetch("assets/content/team/" + c.key + "_short_" + this.translate.currentLang + ".html?t=" + new Date().getTime()).then(res => res.text()).then(data => {
