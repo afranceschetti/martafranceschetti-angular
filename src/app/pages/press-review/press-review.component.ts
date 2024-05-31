@@ -12,7 +12,7 @@ export class PressReviewComponent implements OnInit {
   constructor(private httpClient: HttpClient) { }
 
   ngOnInit(): void {
-    this.httpClient.get<Array<{ section: string, values: Array<{ name: string, year: string, link: string }> }>>("assets/data/pressreviews.json").subscribe(data => {
+    this.httpClient.get<Array<{ section: string, values: Array<{ name: string, year: string, link: string }> }>>("assets/data/pressreviews.json?t=" + (new Date().getTime())).subscribe(data => {
       console.log(data);
       this.pressreviews = data;
     })
