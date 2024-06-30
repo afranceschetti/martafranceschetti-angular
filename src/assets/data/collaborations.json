@@ -3,7 +3,7 @@
         "section": "cinema",
         "values": [
             {
-                "name": "Film Commission Vallée d’Aoste",
+                "name": "Film Commission Vallée d'Aoste",
                 "link": "https://www.filmcommission.vda.it"
             },
             {
@@ -21,6 +21,22 @@
             {
                 "name": "Panama Film",
                 "link": "https://www.panamafilm.it"
+            },
+            {
+                "name": "Magda Film",
+                "link": "https://www.magdafilm.net/"
+            },
+            {
+                "name": "Ginko Film",
+                "link": "https://www.ginkofilm.it/"
+            },
+            {
+                "name": "Enzimi Studio",
+                "link": "http://www.enzimistudio.it/"
+            },
+            {
+                "name": "The Open Reel",
+                "link": "https://www.theopenreel.it/"
             },
             {
                 "name": "Filmine",
@@ -45,41 +61,12 @@
         ]
     },
     {
-        "section": "culture",
-        "values": [
-            {
-                "name": "Raccolti, Festival delle Narrazioni",
-                "link": "https://raccoltifestival.it/"
-            },
-            {
-                "name": "Associazione Choros: Bio-Grafia / Teatro di Comunità",
-                "link": "https://www.choroscomunita.com/"
-            },
-            {
-                "name": "Officine Caos",
-                "link": "https://www.officinecaos.net"
-            },
-            {
-                "name": "Coorpi - La danza in 1 minuto",
-                "link": "https://coorpi.org/"
-            },
-            {
-                "name": "Elena Pugliese - artista",
-                "link": "https://www.elenapugliese.it"
-            },
-            {
-                "name": "Centro Conservazione e Restauro La Venaria Reale",
-                "link": "https://www.centrorestaurovenaria.it"
-            },
-            {
-                "name": "Festival del Viaggiatore ",
-                "link": "https://www.festivaldelviaggiatore.com"
-            }
-        ]
-    },
-    {
         "section": "environment",
         "values": [
+            {
+                "name": "Parco Nazionale Gran Paradiso",
+                "link": "https://www.pngp.it/"
+            },
             {
                 "name": "Festival dell'Accoglienza",
                 "link": "https://www.upmtorino.it/festival-dellaccoglienza/media/"
@@ -93,8 +80,20 @@
                 "link": "https://www.piazzo.it"
             },
             {
+                "name": "Fondazione TIME 2",
+                "link": "https://fondazionetime2.it/"
+            },
+            {
                 "name": "Festival Istruzioni per il Riuso - Tavolo del Riuso",
                 "link": "https://tavolodelriuso.it"
+            },
+            {
+                "name": "Associazione Resconda - progetto Emcoin",
+                "link": "https://resconda.it/articles/progetto-emcoin-1/"
+            },
+            {
+                "name": "Associazione \"Il Bandolo\" ",
+                "link": "https://ilbandolo.org/"
             },
             {
                 "name": "Aspromiele - Associazione Produttori Miele Piemonte",
@@ -125,6 +124,14 @@
                 "name": "Università degli Studi di Torino",
                 "link": "https://www.unito.it/"
             },
+           {
+                "name": "Università degli Studi del Piemonte Orientale",
+                "link": "https://www.uniupo.it/it/"
+            },
+            {
+                "name": "Università degli Studi di Napoli Federico II",
+                "link": "https://www.unina.it/"
+            },
             {
                 "name": "Progetto SMAILE",
                 "link": "https://www.smaile.it"
@@ -138,8 +145,41 @@
                 "link": "https://www.teoresigroup.com/it/"
             },
             {
-                "name": "Istituto Zooprofilattico Piemonte Liguria Valle d’Aosta",
+                "name": "Istituto Zooprofilattico Piemonte Liguria Valle d'Aosta",
                 "link": "https://www.izsplv.it/it/"
+            }
+        ]
+    },
+    {
+        "section": "culture",
+        "values": [
+            {
+                "name": "Raccolti, Festival delle Narrazioni",
+                "link": "https://raccoltifestival.it/"
+            },
+            {
+                "name": "Associazione Choros: Bio-Grafia / Teatro di Comunità",
+                "link": "https://www.choroscomunita.com/"
+            },
+            {
+                "name": "Libreria il Ponte sulla Dora",
+                "link": "http://www.ilpontesulladora.it/"
+            },
+            {
+                "name": "Coorpi - La danza in 1 minuto",
+                "link": "https://coorpi.org/"
+            },
+            {
+                "name": "Elena Pugliese - artista",
+                "link": "https://www.elenapugliese.it"
+            },
+            {
+                "name": "Centro Conservazione e Restauro La Venaria Reale",
+                "link": "https://www.centrorestaurovenaria.it"
+            },
+            {
+                "name": "Festival del Viaggiatore ",
+                "link": "https://www.festivaldelviaggiatore.com"
             }
         ]
     }
