@@ -19,8 +19,8 @@ export class HomeComponent implements OnInit {
 
   ready: boolean = false;
   domains = [
-    "cinema",
     "environment",
+    "cinema",
     "events",
     "innovation",
     //    "art",

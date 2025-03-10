@@ -16,6 +16,11 @@
     <div class="contact-image">
         <img src="assets/images/contacts/contacts.jpg">
     </div>
+    <div class="contact-collage">
+        <div class="image-wrapper" [id]="image.key" *ngFor="let image of collages">
+            <img [src]="'assets/images/contacts/collage/'+image.name" [alt]="image.label">
+        </div>
+    </div>
     <div class="thanks">
         <p translate>contacts_thanks</p>
         Credits: <a href="https://www.linkedin.com/in/alessandrofranceschetti/" target="_blank">AF</a>

@@ -51,17 +51,17 @@ $domain-height: 3em
                     padding: .5rem 0 .5rem 1rem
                     bottom: calc(-20*$domain-height)
             &.ready
-                .cinema
-                    bottom: calc($domain-height*3)
-                .events
-                    bottom: calc($domain-height*0)
-                    transition-delay: 1.2s
                 .environment
-                    bottom: calc($domain-height*2)
-                    transition-delay: .4s
-                .innovation
-                    bottom: calc($domain-height*1)
+                    bottom: calc($domain-height*3 - 1em)
+                .events
+                    bottom: calc($domain-height*0 - 1em)
+                    transition-delay: 1.2s
+                .cinema
+                    bottom: calc($domain-height*1 - 1em)
                     transition-delay: .8s
+                .innovation
+                    bottom: calc($domain-height*2 - 1em)
+                    transition-delay: .4s
         .logo-container
             position: absolute
             top: 1rem
