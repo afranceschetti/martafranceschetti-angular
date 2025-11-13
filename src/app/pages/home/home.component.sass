@@ -200,15 +200,33 @@ $domain-height: 3em
     position: absolute
     top: 2rem
     right: 2rem
+    display: flex
+    align-items: center
     @media (max-width: 767.98px)
         top: 12rem
     a
         margin-left: 1em
         font-size: 0rem
         transition-duration: .5s
+        img
+            height: 0
+            width: 0
+        &.cinemaitalianoinfo
+            span
+                font-size: .4em
+                text-decoration: none !important
+                text-transform: uppercase
+                border: none
+                display: inline-block
+                max-width: 10em
+                margin-left: .8em
     &.ready
         a
             font-size: 2rem
+            &.cinemaitalianoinfo
+                transition-delay: 6s
+                @media (max-width: 767.98px)
+                    transition-delay: 4s
             &.facebook
                 transition-delay: 5.5s
                 @media (max-width: 767.98px)
@@ -217,6 +235,9 @@ $domain-height: 3em
                 transition-delay: 5s
                 @media (max-width: 767.98px)
                     transition-delay: 3s
+            img
+                height: 1em
+                width: 1em
 ::ng-deep
     .color_cinema
         color: $color-collaboration-cinema
